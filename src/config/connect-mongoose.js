@@ -6,6 +6,6 @@ const mongoose = require("mongoose");
     await mongoose.connect(process.env.DATABASE_URL || 'mongodb+srv://abdullah:12345@pixelcluster.zzbjvjd.mongodb.net/solace?retryWrites=true&w=majority');
     console.log("db connected");
   } catch (error) {
-    console.log(error.message);
+    console.log(error.message || "Error while connecting database");
   }
 })();
