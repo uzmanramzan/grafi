@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # Step 7: Run the app
-CMD ["npm","run", "backend"]
+CMD ["npm","run", "backend", "aho"]
