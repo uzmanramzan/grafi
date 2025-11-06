@@ -6,7 +6,7 @@ const createProduct = async (req, res) => {
   try {
     const productData = req.body;
     const product = await Product.create(productData);
-    const message = "Product created";
+    const message = "Product created successfully";
     return responseHelper.success(res, product, message);
   } catch (err) {
     return responseHelper.requestfailure(res, err);
